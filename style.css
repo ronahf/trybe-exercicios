@@ -1,0 +1,18 @@
+
+
+table, th, td{
+    border: 1px solid black;
+  }
+
+.images{
+    width: 400px;
+}
+
+.navigation{
+    text-decoration: none;
+}
+
+.button{
+    text-decoration: none;
+}
+
