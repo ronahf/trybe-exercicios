@@ -35,5 +35,3 @@ else{
     console.log('os dois são iguais!');
 }
 
-//compara três números
-let 
