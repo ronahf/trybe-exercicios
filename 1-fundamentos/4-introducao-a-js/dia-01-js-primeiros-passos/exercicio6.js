@@ -9,7 +9,7 @@ let bispo = 'Move-se em uma linha reta, diagonalmente. Ele pode mover-se por tan
 let cavalo = 'Única peça do tabuleiro que pode pular sobre outras peças. Move-se por duas casas horizontalmente ou verticalmente e então uma casa a mais em uma ângulo reto. O movimento do cavalo forma um L';
 
 //Peça a ser inserida
-let text = 'RaiNHA';
+let text = 'sadasd';
 
 switch (text.toLowerCase()){
     case 'rei':
@@ -27,7 +27,10 @@ switch (text.toLowerCase()){
     case 'bispo':
         console.log (bispo);
         break;
-    default:
+    case 'cavalo':
         console.log (cavalo)
         break; 
+    default:
+        console.log ('erro: peça inexistente! ')
+        break;
 }
