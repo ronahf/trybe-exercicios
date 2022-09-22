@@ -1,3 +1,5 @@
+//Some todos os valores contidos no array e imprima o resultado;
+
 let numbers = [5, 9, 100, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
