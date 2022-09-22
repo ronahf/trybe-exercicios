@@ -1,4 +1,4 @@
-let salarioBruto = 100000;
+let salarioBruto = 18000;
 let salarioLiquido;
 let posDeducaoInss;
 
