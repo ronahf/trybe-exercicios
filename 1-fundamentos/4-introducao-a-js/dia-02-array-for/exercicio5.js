@@ -1,6 +1,6 @@
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 
-let numbers = [0, 2, 4, 6, 2, 8, 10, 2, 350, 10];
+let numbers = [1, 2, 4, 6, 2, 17, 10, 2, 350, 10];
 let quantidadeDeImpares=0;
 let imparesEncontrados = [];
 
