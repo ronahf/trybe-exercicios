@@ -2,7 +2,7 @@
 
 
 //invertendo uma string com um for e decremento
-let word = 'tryber';
+let word = 'banana';
 let drow = '';
 
 console.log(word.length)
