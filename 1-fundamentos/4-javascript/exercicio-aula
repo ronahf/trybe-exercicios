@@ -1,0 +1,42 @@
+let items = ['big mac', 'big tasty', 'batata', 'refri', 'suco'];
+let price = [20, 30, 20, 5, 4];
+
+//concatenar strings
+
+// console.log(items[0] + ' = ' + price[0]);
+
+
+//concatenar com loop
+
+//for (let index=0; index < items.length; index +=1){
+//    if (price[index] === undefined){
+//       console.log(items[index] + '= Não definido')
+//    } else {
+//   console.log(items[index] + ' = ' + price[index]);  
+//    }
+//}
+
+//=====================================================
+
+let money = 50;
+let cart = [];
+let bigger = 0;
+
+for(let index=0; index < price.length; index +=1){
+    if (price[index] <= money){
+        cart.push(items[index] + ' = R$' + price[index]);
+    } else{
+        console.log('ai');
+    }
+
+    if(price[index] <= money && price[index] > bigger){
+        bigger = price[index];
+    }
+}
+
+
+
+console.log(cart);
+console.log(bigger);
+
+//=====================================================
