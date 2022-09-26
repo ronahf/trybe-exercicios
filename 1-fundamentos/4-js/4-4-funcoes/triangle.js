@@ -13,3 +13,24 @@ function isTriangle (a, b, c) {
     }
 }
 console.log(isTriangle(a, b, c));
+//_____________________________________________________
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(property + ' = ' + object[property]);
+}
+//_____________________________________________________
+
+function sum(a, b) {
+   return a + b;
+  }
+  console.log(sum(1, 2));
+//___________________________________________________
+
+let name = 'rona';
+
+function greetingsMessage(name) {
+    console.log("Boas vindas, " + name);
+  }
+  
