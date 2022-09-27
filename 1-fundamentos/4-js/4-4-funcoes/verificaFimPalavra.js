@@ -22,3 +22,4 @@ function wordAndEnding (word, ending){
 
 console.log(wordAndEnding('ronaldo', 'aldo'));
 console.log(wordAndEnding('ronaldo', 'rona'));
+console.log(wordAndEnding('trybe', 'b'));
