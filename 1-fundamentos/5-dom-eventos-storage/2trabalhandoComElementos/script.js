@@ -1,5 +1,18 @@
+//1
 console.log(document.getElementById('elementoOndeVoceEsta'));
 document.getElementById('elementoOndeVoceEsta');
+
+//2
+console.log(document.getElementById('elementoOndeVoceEsta').parentNode);
+document.getElementById('elementoOndeVoceEsta').parentNode.style.backgroundColor = 'red';
+
+//3
+document.getElementById('primeiroFilhoDoFilho').innerHTML = 'Adicionando um texto aleatório!'; 
+
+//4 
+document.getElementById('pai').firstChild;
+console.log(document.getElementById('pai').firstChild);
+
 
 
 
