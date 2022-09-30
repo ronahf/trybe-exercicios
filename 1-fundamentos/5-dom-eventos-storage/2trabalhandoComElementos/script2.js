@@ -41,6 +41,7 @@ let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito',
 for (let index = 0; index<numbers.length; index +=1){
     let li = document.createElement('li');
     li.innerText = numbers[index];
+    li.className = 'numbers-list';
     ul.appendChild(li);
 }
 rightContent.appendChild(ul);
@@ -49,24 +50,31 @@ rightContent.appendChild(ul);
 for (let index = 1; index <= 3; index +=1){
     let h3 = document.createElement('h3');
     h3.innerText = index;
+    h3.className = 'description';
     mainContent.appendChild(h3);
 }
+//_----------------------------------------------------------------------------------------------------------------------------------------
+// 7.Adicione a classe title na tag h1 criada;
+h1.className = 'title';
 
+// 8.Adicione a classe description nas 3 tags h3 criadas;
+// feito acima! h3.className = 'description';
 
+// 9.Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+mainContent.removeChild(leftContent);
 
+// 10.Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+rightContent.style.marginRight = 'auto';
 
+// 11.Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+mainContent.style.backgroundColor = 'green';
 
-
-
-
-
-
-
-
-// Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
-// Adicione a classe title na tag h1 criada;
-// Adicione a classe description nas 3 tags h3 criadas;
-// Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
-// Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
-// Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
-// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+// 12.Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+let list = document.querySelectorAll('.numbers-list');
+for (let index = 0; index < list.length; index +=1){
+    let element = list[index];
+    
+    if (element.innerText.includes('Nove') || element.innerText.includes('Dez')){
+        ul.removeChild(element); 
+    }
+}
