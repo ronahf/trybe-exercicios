@@ -7,27 +7,30 @@
     <title>Free Trip!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<fieldset>
     <header id="header" class="form-header">
         <img src="https://st2.depositphotos.com/3725083/5485/i/450/depositphotos_54856269-stock-photo-travel-the-world-monument-concept.jpg" id="picture1">
         <h1>TrybeTrip! Seu sonho sendo realizado!</h1>
     </header>
     
+<form action="" method="get" id="myForm" class="form-data">
     <section class="section-content">
-        <label for="input-text">Nome:</label> 
-        <input type="text" placeholder="nome completo" required class="" value="" name="texto" id="input-text" minlength="10" maxlength="40"> 
+        <label for="full-name">Nome:</label> 
+        <input type="text" placeholder="nome completo" class="" value="" name="texto" id="full-name" minlength="10" maxlength="40" required> 
     </section>
     
     <section class="section-content">
         <label for="input-email">Email:</label> 
-        <input type="text" placeholder="melhor email" required class="" value="" name="texto" id="input-email" minlength="10" maxlength="50"> 
+        <input type="text" placeholder="seu melhor email" class="" value="" name="texto" id="input-email" minlength="10" maxlength="50" required> 
     </section>
 
     <section class="section-content"> 
-        <label for="hub1"><input type="radio" id="hub1" name="hub" value="cid">Cidade </label>
-        <label for="hub2"><input type="radio" id="hub2" name="hub" value="cmp">Campo </label>
-        <label for="hub3"><input type="radio" id="hub3" name="hub" value="pra">Praia </label>
-        <label for="hub4"><input type="radio" id="hub4" name="hub" value="mon">Montanha</label>
+        <label for="hub1"><input type="radio" id="hub1" name="hub" value="cid"> Cidade </label>
+        <label for="hub2"><input type="radio" id="hub2" name="hub" value="cmp"> Campo </label>
+        <label for="hub3"><input type="radio" id="hub3" name="hub" value="pra"> Praia </label>
+        <label for="hub4"><input type="radio" id="hub4" name="hub" value="mon"> Montanha</label>
     </section>
 
     <section class="section-content">
@@ -44,20 +47,21 @@
     </section>
 
     <section class="section-content">
-        <label for="news"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <label for="news"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
         <input type="checkbox" id="news"> SIM, por favor!
     </section>
 
     <section class="section-content">
-        <input type="checkbox" id="agree" required>
-        <label for="agree"> Concordo que as imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <label for="agree"> As imagens das minhas férias poderão ser usadas para futuros concuros?
+        </label><br>
+        <input type="checkbox" id="agree" required> Estou ciente e concordo com esse termo!
     </section>
-
+</fieldset>
     <section id= "form-buttons" class="section-content" >
-        <button type="submit" id="submit-button">Let's' Go!</button>
-        <button type="reset" id="reset-button">Limpar Dados</button>
+        <button type="submit" id="submit-button" required> Participar do TrybeTrip!</button>
+        <button type="reset" id="reset-button"> Limpar </button>
     </section>
-
+</form>
     <script src="script.js"></script>
 </body>
 </html>
