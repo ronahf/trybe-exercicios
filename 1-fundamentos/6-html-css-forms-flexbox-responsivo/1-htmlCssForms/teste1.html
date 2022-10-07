@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms1</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="GET">
+        <label for="input-text">Digite seu nome</label> 
+        <!-- for cria um vinculo da label com algum outro campo -->
+        <input type="text" placeholder="Digite algo aqui:" required class="" value="RonaldoHFrancisco" name="texto" id="input-text"> 
+        <br><br>
+        <textarea name="" id="" cols="45" rows="15" placeholder="Aqui escreva algo para ... "></textarea>
+        <br><br>
+        <input type="checkbox" id="esporte1" value="fut" name="esporte" checked> Futebol 
+        <input type="checkbox" id="esporte2"v alue="vol" name="esporte" > Volei
+        <input type="checkbox" id="esporte3" value="bas" name="esporte" > Basquete
+        <input type="checkbox" id="esporte4" value="nat" name="esporte" > Natação
+        <br><br>
+        Aqui 
+        <label for="hub2">
+        <input type="radio" id="hub1" name="hub1" value="sp">SP
+        <input type="radio" id="hub1" name="hub1" value="mg">MG
+        <input type="radio" id="hub2" name="hub2" value="rj">RJ
+        <input type="radio" id="hub2" name="hub2" value="ba">BA
+        </label>
+        <!-- (Obs: o hub1 só pode ter 1 seleção, assim como o hub2) 
+        A Label da linha 24 permite clicar em qualquer lugar da opção e selecioná-la-->
+        <br><br>
+        <select name="estado" id="dropdown-estado">
+            <option value="sp">SP</option>
+            <option value="ba">BA</option>
+            <option value="mg">MG</option>
+            <option value="rj">RJ</option>
+        </select>
+        <br><br>
+        <p>Usuário</p>
+        <input type="text" name="user" required>
+        <p>Senha</p>
+        <input type="password" name="senha" required>
+        <button type="submit" class="" id="" name="">Enviar</button>
+        <br><br>
+        <input type="file" name="" id="">
+        <br><br><hr>
+    </form>
+</body>
+</html>

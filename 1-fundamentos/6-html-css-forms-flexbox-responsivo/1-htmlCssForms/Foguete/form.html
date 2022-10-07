@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Trip!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" class="form-header">
+        <img src="https://st2.depositphotos.com/3725083/5485/i/450/depositphotos_54856269-stock-photo-travel-the-world-monument-concept.jpg" id="picture1">
+        <h1>TrybeTrip! Seu sonho sendo realizado!</h1>
+    </header>
+    
+    <section class="section-content">
+        <label for="input-text">Nome:</label> 
+        <input type="text" placeholder="nome completo" required class="" value="" name="texto" id="input-text" minlength="10" maxlength="40"> 
+    </section>
+    
+    <section class="section-content">
+        <label for="input-email">Email:</label> 
+        <input type="text" placeholder="melhor email" required class="" value="" name="texto" id="input-email" minlength="10" maxlength="50"> 
+    </section>
+
+    <section class="section-content"> 
+        <label for="hub1"><input type="radio" id="hub1" name="hub" value="cid">Cidade </label>
+        <label for="hub2"><input type="radio" id="hub2" name="hub" value="cmp">Campo </label>
+        <label for="hub3"><input type="radio" id="hub3" name="hub" value="pra">Praia </label>
+        <label for="hub4"><input type="radio" id="hub4" name="hub" value="mon">Montanha</label>
+    </section>
+
+    <section class="section-content">
+        <label for="reason">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>  
+    </section>
+    
+    <section class="section-content">
+        <textarea name="" id="reason" cols="45" rows="15" maxlength="500" placeholder="Escreva aqui, em até 500 caracteres, porque você deve ser o grande vencedor!"></textarea>
+    </section>
+
+    <section class="section-content">
+        <label for="bestDate">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" id="bestDate">
+    </section>
+
+    <section class="section-content">
+        <label for="news"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <input type="checkbox" id="news"> SIM, por favor!
+    </section>
+
+    <section class="section-content">
+        <input type="checkbox" id="agree" required>
+        <label for="agree"> Concordo que as imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </section>
+
+    <section id= "form-buttons" class="section-content" >
+        <button type="submit" id="submit-button">Let's' Go!</button>
+        <button type="reset" id="reset-button">Limpar Dados</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
