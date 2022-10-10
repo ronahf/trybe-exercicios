@@ -1,67 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Trip!</title>
+    <link rel="stylesheet" href="/1-fundamentos/6-html-css-forms-flexbox-responsivo/1-htmlCssForms/Foguete/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="/1-fundamentos/6-html-css-forms-flexbox-responsivo/1-htmlCssForms/Foguete/js/bootstrap.min.js"></script>
 </head>
+   
 
 <body>
 <fieldset>
-    <header id="header" class="form-header">
+    <header id="header" class="form-header text-bg-success p-3">
         <img src="https://st2.depositphotos.com/3725083/5485/i/450/depositphotos_54856269-stock-photo-travel-the-world-monument-concept.jpg" id="picture1">
         <h1>TrybeTrip! Seu sonho sendo realizado!</h1>
     </header>
     
-<form action="" method="get" id="myForm" class="form-data">
-    <section class="section-content">
+<form action="" method="get" id="myForm" class="form-data text-bg-success p-3">
+    <section class="section-content form-group">
         <label for="full-name">Nome:</label> 
-        <input type="text" placeholder="nome completo" class="" value="" name="texto" id="full-name" minlength="10" maxlength="40" required> 
+        <input class="form-control" type="text" placeholder="nome completo" class="" value="" name="texto" id="full-name" minlength="10" maxlength="40" required> 
     </section>
     
-    <section class="section-content">
+    <section class="section-content form-group">
         <label for="input-email">Email:</label> 
-        <input type="text" placeholder="seu melhor email" class="" value="" name="texto" id="input-email" minlength="10" maxlength="50" required> 
+        <input class="form-control" type="text" placeholder="seu melhor email" class="" value="" name="texto" id="input-email" minlength="10" maxlength="50" required> 
     </section>
 
-    <section class="section-content"> 
-        <label for="hub1"><input type="radio" id="hub1" name="hub" value="cid"> Cidade </label>
-        <label for="hub2"><input type="radio" id="hub2" name="hub" value="cmp"> Campo </label>
-        <label for="hub3"><input type="radio" id="hub3" name="hub" value="pra"> Praia </label>
-        <label for="hub4"><input type="radio" id="hub4" name="hub" value="mon"> Montanha</label>
+    <section class="section-content form-group text-bg-success p-3"> 
+        <label><h4>Marque seu destino favorito:</label></h2>
+        <label for="hub1"><input class="form-check-input" type="radio" id="hub1" name="hub" value="cid"> Cidade </label>
+        <label for="hub2"><input class="form-check-input" type="radio" id="hub2" name="hub" value="cmp"> Campo </label>
+        <label for="hub3"><input class="form-check-input" type="radio" id="hub3" name="hub" value="pra"> Praia </label>
+        <label for="hub4"><input class="form-check-input" type="radio" id="hub4" name="hub" value="mon"> Montanha</label>
     </section>
 
-    <section class="section-content">
-        <label for="reason">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>  
-    </section>
     
-    <section class="section-content">
-        <textarea name="" id="reason" cols="45" rows="15" maxlength="500" placeholder="Escreva aqui, em até 500 caracteres, porque você deve ser o grande vencedor!"></textarea>
+
+    <section class="section-content form-group text-bg-success p-3">
+        <label for="reason"><h5>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h5></label>  
+        <textarea class="form-control" name="" id="reason" cols="45" rows="15" maxlength="500" placeholder="Escreva aqui, em até 500 caracteres, porque você deve ser o grande vencedor!"></textarea>
     </section>
 
-    <section class="section-content">
+    <section class="section-content form-group text-bg-success p-3">
         <label for="bestDate">Qual a melhor data para realizar sua viagem?</label>
         <input type="date" id="bestDate">
     </section>
 
-    <section class="section-content">
+    <section class="section-content form-group text-bg-success p-3">
         <label for="news"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
-        <input type="checkbox" id="news"> SIM, por favor!
+        <input type="checkbox" class="form-check-input mt-0" id="news"> SIM, por favor!
     </section>
 
-    <section class="section-content">
+    <section class="section-content form-group text-bg-success p-3">
         <label for="agree"> As imagens das minhas férias poderão ser usadas para futuros concuros?
         </label><br>
-        <input type="checkbox" id="agree" required> Estou ciente e concordo com esse termo!
+        <input type="checkbox" class="form-check-input mt-0" id="agree" required> Estou ciente e concordo com esse termo!
     </section>
 </fieldset>
-    <section id= "form-buttons" class="section-content" >
-        <button type="submit" id="submit-button" required> Participar do TrybeTrip!</button>
-        <button type="reset" id="reset-button"> Limpar </button>
+
+    <section id= "form-buttons" class="section-content text-bg-success p-3" >
+        <button type="submit" id="submit-button" class="btn btn-success btn-outline-dark" required> Participar do TrybeTrip!</button>
+        <button type="reset" id="reset-button" class="btn btn-danger"> Limpar </button>
     </section>
 </form>
+
     <script src="script.js"></script>
+    
 </body>
 </html>
