@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flex Flow</title>
+    <style>
+      .box {
+        color: #5f43a5;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        /* text-align: center; */
+        width: 50%;
+      }
+
+      .box-container {
+        background-color: #2ba835;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 200px;
+
+        /* COLUMN é a propriedade do eixo principal, ou Flex-direction, e o FLOW é sobre a quebra, o Flex-wrap. */
+        
+
+        /* ADICIONE AQUI SEUS TESTES */
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>
+
+<!-- Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction.
+
+Teste as possibilidades (wrap e nowrap) para a propriedade flex-wrap.
+
+Teste as possibilidades para a propriedade flex-flow.  -->
+
+<!-- FLEX FLOW = primeiro valor que recebe é o do flex-direction, e o segundo, o do flex-wrap. -->
