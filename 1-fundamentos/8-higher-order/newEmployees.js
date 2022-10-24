@@ -1,21 +1,23 @@
-const dataEmployees = (name, lastname) => {
+const dataEmployees = (fullName) => {
   let obj = {
-    nome: `${name} ${lastname}`,
-    email: `${name}${lastname}@trybe.com`.toLowerCase() 
+    nome: fullName,
+    email: `${fullName}`.toLowerCase().split(' ').join('_')+'@trybe.com',
     }
     return obj;
 }
-console.log(dataEmployees('Ludi', 'Garni'));
+// console.log(dataEmployees('Ludi Garni'));
 
-const newEmployees = () => {
+const newEmployees = (anything) => {
   const employees = {
-    id1: dataEmployees('Pedro', 'Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    id2: dataEmployees('Luiza', 'Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    id3: dataEmployees('Carla', 'Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+    id1: anything('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+    id2: anything('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+    id3: anything('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
   }
   return employees;
 };
-console.log(newEmployees());
+
+console.log(newEmployees(dataEmployees));
+//aqui temos uma função chamando outra função, isso é maaaravilhooso!
 
 
 // Crie uma função que retorne um objeto no formato { nomeCompleto, email } representando uma nova pessoa contratada. Passe sua função como parâmetro da HOF newEmployees para criar cada pessoa contratada em seu respectivo id. A sua função deve receber como parâmetro o nome completo da pessoa funcionária e, a partir dele, gerar automaticamente um email no formato nome_da_pessoa@trybe.com.
