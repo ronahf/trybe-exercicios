@@ -1,4 +1,4 @@
-const books = require('./books');
+const books = require('../books');
 
 // Crie uma string com os nomes de todas as pessoas autoras.
 const reduceNames = () => {
@@ -25,4 +25,9 @@ const longestNamedBook = () => {
     });
 }
 
-console.log(longestNamedBook());
+// console.log(longestNamedBook());
+
+// para entender um pouco melhor: 
+books.forEach((elemento, index, arrayCompleto) => {
+    console.log(`${elemento.name} é o livro na posição ${index} do array ${arrayCompleto}`)
+})
