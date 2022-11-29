@@ -1,41 +1,63 @@
 import React from 'react';
-import './App.css';
 
 class App extends React.Component {
-  // constructor(){
-  //   super()
-  //   this.handleClick = this.handleClick.bind(this)
-  // }
+  constructor() {
+    super();
 
-  //usando arrow function, aí não precisa usar bind no constructor.
-  handleClick1 = () => {
-    // Essa chamada ao `this` retorna `undefined`? !
-    console.log(this)
-    console.log('Clicou1')
+    this.handleButtonOne = this.handleButtonOne.bind(this);
+    this.handleButtonTwo = this.handleButtonTwo.bind(this);
+    this.handleButtonThree = this.handleButtonThree.bind(this);
+
+    this.state = {
+      clicksBtnOne: 0,
+      clicksBtnTwo: 0,
+      clicksBtnThree: 0,
+    };
   }
 
-  handleClick2 = () => {
-    // Essa chamada ao `this` retorna `undefined`? !
-    console.log(this)
-    console.log('Clicou2')
+  handleButtonOne() {
+    this.setState((prevState) => ({
+      clicksBtnOne: prevState.clicksBtnOne + 1,
+    }));
   }
 
-  handleClick3 = () => {
-    // Essa chamada ao `this` retorna `undefined`? !
-    console.log(this)
-    console.log('Clicou3')
+  handleButtonTwo() {
+    this.setState((prevState) => ({
+      clicksBtnTwo: prevState.clicksBtnTwo + 1,
+    }));
   }
 
-  render() {
-    // Já essa chamada ao `this`, feita de dentro da função `render`, retorna o objeto que esperamos
-    console.log(this)
-    return (
+  handleButtonThree() {
+    this.setState((prevState) => ({
+      clicksBtnThree: prevState.clicksBtnThree + 1,
+    }));
+  }
+
+render() {
+  const { clicksBtnOne, clicksBtnTwo, clicksBtnThree } = this.state;
+  return (
     <div>
-    <button onClick={this.handleClick1}>Meu botão1</button>
-    <button onClick={this.handleClick2}>Meu botão2</button>
-    <button onClick={this.handleClick3}>Meu botão3</button>
+      <button
+        type="button"
+        onClick={ this.handleButtonOne }
+      >
+        {`Cliques no botão 1: ${clicksBtnOne}`}
+      </button>
+      <button
+        type="button"
+        onClick={ this.handleButtonTwo }
+      >
+        {`Cliques no botão 2: ${clicksBtnTwo}`}
+      </button>
+      <button
+        type="button"
+        onClick={ this.handleButtonThree }
+      >
+        {`Cliques no botão 3: ${clicksBtnThree}`}
+      </button>
     </div>
-  )}
+  );
+}
 }
 
 export default App;
