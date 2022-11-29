@@ -3,8 +3,8 @@ import React from "react";
 class Card extends React.Component {
     render () {
         const { name, characters, release, image, genre, rate } = this.props;
-        console.log(name);
-        console.log(characters);
+        // console.log(name);
+        // console.log(characters);
 
         return (
             <div className='Card'>
